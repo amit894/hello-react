@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"
+      crossorigin
+    ></script>
+    <title>React ⚛️</title>
+  </head>
+  <body>
+    <div id="heading"></div>
+    <script type="text/babel">
+      let day_1="Monday";
+      let day_2="Tuesday";
+      let day_3="Wednesday";
+
+      ReactDOM.render(
+        <ul>
+          <li> {day_1} </li>
+          <li> {day_2} </li>
+          <li> {day_3.toUpperCase()} </li>
+          <li> {day_3.length} </li>
+        </ul>,
+        document.getElementById("heading")
+      );
+    </script>
+  </body>
+</html>
