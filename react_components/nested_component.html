@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"
+      crossorigin
+    ></script>
+    <title>React ⚛️</title>
+  </head>
+  <body>
+    <div id="heading"></div>
+    <script type="text/babel">
+      function Header(){
+        return (
+        <header>
+          <h1> This is a sample header </h1>
+        </header>
+
+        );
+      }
+      function Main(){
+        return (
+        <section>
+          <p> This is a sample para </p>
+        </section>
+
+        );
+      }
+      function Nested (){
+        return (
+          <div>
+            <Header/>
+            <Main />
+          </div>
+        );
+      }
+      ReactDOM.render(
+        <Nested/>,
+        document.getElementById("heading")
+      );
+    </script>
+  </body>
+</html>
