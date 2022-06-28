@@ -1,22 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import {useState } from "react";
+import "./App.css";
+import { Link, Outlet } from "react-router-dom";
 
-
-function App() {
-  const [emotion, setEmotion] = useState("happy");
-
+export default function App() {
   return (
-    <div className="App">
-     <h1> Current emotion is {emotion} </h1>
-     <button  onClick={()=>setEmotion("sad")}>
-        sad
-     </button>
-     <button  onClick={()=>setEmotion("excited")}>
-        excited
-     </button>
-    </div>
+    <h1> learn react </h1>
   );
 }
-
-export default App;
